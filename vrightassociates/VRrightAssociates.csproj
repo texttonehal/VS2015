@@ -1,0 +1,427 @@
+﻿<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{36BEAB0E-9CD6-422A-8088-B7EA5090021D}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>vrightassociates</RootNamespace>
+    <AssemblyName>vrightassociates</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\addNewPage.aspx" />
+    <Content Include="packages.config" />
+    <Content Include="assets\bootstrap-3.3.7\css\bootstrap-theme.css.map" />
+    <Content Include="assets\bootstrap-3.3.7\css\bootstrap-theme.min.css.map" />
+    <Content Include="assets\bootstrap-3.3.7\css\bootstrap.css.map" />
+    <Content Include="assets\bootstrap-3.3.7\css\bootstrap.min.css.map" />
+    <Content Include="assets\bootstrap-3.3.7\editor\bootstrap3-wysihtml5-bower\.bower.json" />
+    <Content Include="assets\bootstrap-3.3.7\editor\bootstrap3-wysihtml5-bower\bower.json" />
+    <Content Include="assets\bootstrap-3.3.7\editor\bootstrap3-wysihtml5-bower\LICENCE" />
+    <Content Include="assets\bootstrap-3.3.7\editor\bootstrap3-wysihtml5-bower\README.md" />
+    <Content Include="assets\bootstrap-3.3.7\editor\forms\.DS_Store" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\.bower.json" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\bower.json" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\composer.json" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\CONTRIBUTING.md" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\MAINTAIN.md" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\meteor\publish.sh" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\meteor\README.md" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\meteor\runtests.sh" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\package.json" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\README.md" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\src\less\elements.less" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\src\less\summernote.less" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\src\sass\summernote.scss" />
+    <Content Include="assets\bootstrap-3.3.7\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="assets\bootstrap-3.3.7\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="assets\bootstrap-3.3.7\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="assets\bootstrap-3.3.7\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="assets\bootstrap-3.3.7\nestable\.bower.json" />
+    <Content Include="assets\bootstrap-3.3.7\nestable\README.md" />
+    <Content Include="assets\font-awesome-4.7.0\fonts\fontawesome-webfont.eot" />
+    <Content Include="assets\font-awesome-4.7.0\fonts\fontawesome-webfont.ttf" />
+    <Content Include="assets\font-awesome-4.7.0\fonts\fontawesome-webfont.woff" />
+    <Content Include="assets\font-awesome-4.7.0\fonts\fontawesome-webfont.woff2" />
+    <Content Include="assets\font-awesome-4.7.0\fonts\FontAwesome.otf" />
+    <Content Include="assets\font-awesome-4.7.0\less\animated.less" />
+    <Content Include="assets\font-awesome-4.7.0\less\bordered-pulled.less" />
+    <Content Include="assets\font-awesome-4.7.0\less\core.less" />
+    <Content Include="assets\font-awesome-4.7.0\less\fixed-width.less" />
+    <Content Include="assets\font-awesome-4.7.0\less\font-awesome.less" />
+    <Content Include="assets\font-awesome-4.7.0\less\icons.less" />
+    <Content Include="assets\font-awesome-4.7.0\less\larger.less" />
+    <Content Include="assets\font-awesome-4.7.0\less\list.less" />
+    <Content Include="assets\font-awesome-4.7.0\less\mixins.less" />
+    <Content Include="assets\font-awesome-4.7.0\less\path.less" />
+    <Content Include="assets\font-awesome-4.7.0\less\rotated-flipped.less" />
+    <Content Include="assets\font-awesome-4.7.0\less\screen-reader.less" />
+    <Content Include="assets\font-awesome-4.7.0\less\stacked.less" />
+    <Content Include="assets\font-awesome-4.7.0\less\variables.less" />
+    <Content Include="assets\font-awesome-4.7.0\scss\font-awesome.scss" />
+    <Content Include="assets\font-awesome-4.7.0\scss\_animated.scss" />
+    <Content Include="assets\font-awesome-4.7.0\scss\_bordered-pulled.scss" />
+    <Content Include="assets\font-awesome-4.7.0\scss\_core.scss" />
+    <Content Include="assets\font-awesome-4.7.0\scss\_fixed-width.scss" />
+    <Content Include="assets\font-awesome-4.7.0\scss\_icons.scss" />
+    <Content Include="assets\font-awesome-4.7.0\scss\_larger.scss" />
+    <Content Include="assets\font-awesome-4.7.0\scss\_list.scss" />
+    <Content Include="assets\font-awesome-4.7.0\scss\_mixins.scss" />
+    <Content Include="assets\font-awesome-4.7.0\scss\_path.scss" />
+    <Content Include="assets\font-awesome-4.7.0\scss\_rotated-flipped.scss" />
+    <Content Include="assets\font-awesome-4.7.0\scss\_screen-reader.scss" />
+    <Content Include="assets\font-awesome-4.7.0\scss\_stacked.scss" />
+    <Content Include="assets\font-awesome-4.7.0\scss\_variables.scss" />
+    <Content Include="Admin\MasterPageVRightAssociates.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\amssoftech.css" />
+    <Content Include="assets\bootstrap-3.3.7\css\bootstrap-theme.css" />
+    <Content Include="assets\bootstrap-3.3.7\css\bootstrap-theme.min.css" />
+    <Content Include="assets\bootstrap-3.3.7\css\bootstrap.css" />
+    <Content Include="assets\bootstrap-3.3.7\css\bootstrap.min.css" />
+    <Content Include="assets\bootstrap-3.3.7\editor\bootstrap3-wysihtml5-bower\dist\amd\bootstrap3-wysihtml5.all.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\bootstrap3-wysihtml5-bower\dist\amd\bootstrap3-wysihtml5.all.min.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\bootstrap3-wysihtml5-bower\dist\amd\commands.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\bootstrap3-wysihtml5-bower\dist\amd\handlebars.runtime.amd.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\bootstrap3-wysihtml5-bower\dist\amd\templates.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\bootstrap3-wysihtml5-bower\dist\amd\wysihtml5.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\bootstrap3-wysihtml5-bower\dist\bootstrap3-wysihtml5.all.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\bootstrap3-wysihtml5-bower\dist\bootstrap3-wysihtml5.all.min.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\bootstrap3-wysihtml5-bower\dist\bootstrap3-wysihtml5.css" />
+    <Content Include="assets\bootstrap-3.3.7\editor\bootstrap3-wysihtml5-bower\dist\bootstrap3-wysihtml5.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\bootstrap3-wysihtml5-bower\dist\bootstrap3-wysihtml5.min.css" />
+    <Content Include="assets\bootstrap-3.3.7\editor\bootstrap3-wysihtml5-bower\dist\bootstrap3-wysihtml5.min.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\bootstrap3-wysihtml5-bower\dist\commands.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\bootstrap3-wysihtml5-bower\dist\locales\bootstrap-wysihtml5.ar-AR.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\bootstrap3-wysihtml5-bower\dist\locales\bootstrap-wysihtml5.bg-BG.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\bootstrap3-wysihtml5-bower\dist\locales\bootstrap-wysihtml5.ca-CT.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\bootstrap3-wysihtml5-bower\dist\locales\bootstrap-wysihtml5.cs-CZ.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\bootstrap3-wysihtml5-bower\dist\locales\bootstrap-wysihtml5.da-DK.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\bootstrap3-wysihtml5-bower\dist\locales\bootstrap-wysihtml5.de-DE.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\bootstrap3-wysihtml5-bower\dist\locales\bootstrap-wysihtml5.el-GR.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\bootstrap3-wysihtml5-bower\dist\locales\bootstrap-wysihtml5.en-US.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\bootstrap3-wysihtml5-bower\dist\locales\bootstrap-wysihtml5.es-AR.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\bootstrap3-wysihtml5-bower\dist\locales\bootstrap-wysihtml5.es-ES.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\bootstrap3-wysihtml5-bower\dist\locales\bootstrap-wysihtml5.fr-FR.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\bootstrap3-wysihtml5-bower\dist\locales\bootstrap-wysihtml5.hr-HR.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\bootstrap3-wysihtml5-bower\dist\locales\bootstrap-wysihtml5.hu-HU.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\bootstrap3-wysihtml5-bower\dist\locales\bootstrap-wysihtml5.il-HE.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\bootstrap3-wysihtml5-bower\dist\locales\bootstrap-wysihtml5.it-IT.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\bootstrap3-wysihtml5-bower\dist\locales\bootstrap-wysihtml5.ja-JP.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\bootstrap3-wysihtml5-bower\dist\locales\bootstrap-wysihtml5.ko-KR.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\bootstrap3-wysihtml5-bower\dist\locales\bootstrap-wysihtml5.lt-LT.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\bootstrap3-wysihtml5-bower\dist\locales\bootstrap-wysihtml5.mo-MD.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\bootstrap3-wysihtml5-bower\dist\locales\bootstrap-wysihtml5.nb-NB.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\bootstrap3-wysihtml5-bower\dist\locales\bootstrap-wysihtml5.nl-NL.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\bootstrap3-wysihtml5-bower\dist\locales\bootstrap-wysihtml5.pl-PL.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\bootstrap3-wysihtml5-bower\dist\locales\bootstrap-wysihtml5.pt-BR.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\bootstrap3-wysihtml5-bower\dist\locales\bootstrap-wysihtml5.ru-RU.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\bootstrap3-wysihtml5-bower\dist\locales\bootstrap-wysihtml5.sk-SK.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\bootstrap3-wysihtml5-bower\dist\locales\bootstrap-wysihtml5.sv-SE.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\bootstrap3-wysihtml5-bower\dist\locales\bootstrap-wysihtml5.tr-TR.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\bootstrap3-wysihtml5-bower\dist\locales\bootstrap-wysihtml5.ua-UA.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\bootstrap3-wysihtml5-bower\dist\locales\bootstrap-wysihtml5.zh-CN.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\bootstrap3-wysihtml5-bower\dist\locales\bootstrap-wysihtml5.zh-TW.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\bootstrap3-wysihtml5-bower\dist\templates.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\bootstrap3-wysihtml5-bower\examples\index-require-dev.html" />
+    <Content Include="assets\bootstrap-3.3.7\editor\bootstrap3-wysihtml5-bower\examples\index-require.html" />
+    <Content Include="assets\bootstrap-3.3.7\editor\bootstrap3-wysihtml5-bower\examples\main-dev.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\bootstrap3-wysihtml5-bower\examples\main.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\bootstrap3-wysihtml5-bower\examples\start-dev.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\bootstrap3-wysihtml5-bower\examples\start.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\bootstrap3-wysihtml5-bower\index-all.html" />
+    <Content Include="assets\bootstrap-3.3.7\editor\bootstrap3-wysihtml5-bower\index-dev.html" />
+    <Content Include="assets\bootstrap-3.3.7\editor\bootstrap3-wysihtml5-bower\index-multi-dev.html" />
+    <Content Include="assets\bootstrap-3.3.7\editor\bootstrap3-wysihtml5-bower\index.html" />
+    <Content Include="assets\bootstrap-3.3.7\editor\bootstrap3-wysihtml5-bower\karma.conf.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\forms\masks.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\forms\plugins.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\forms\upload.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\forms\wizard.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\forms\wysiwyg.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\dist\summernote-bs3.css" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\dist\summernote.css" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\dist\summernote.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\dist\summernote.min.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\examples\airmode.html" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\examples\bs2.html" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\examples\bs2fa4.html" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\examples\bs301fa4.html" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\examples\codemirror.html" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\examples\external-api.html" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\examples\get-button.html" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\examples\index.html" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\examples\jquery-custom-event.html" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\examples\jquery18lt.html" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\examples\lang.html" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\examples\nativestyle.html" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\examples\ondialog-multitab.html" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\examples\ondialog.html" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\examples\plugin-hello.html" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\examples\plugin-hint-emoji.html" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\examples\plugin-hint-userdefine.html" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\examples\plugin-video.html" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\examples\rtl.html" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\examples\textarea.html" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\Gruntfile.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\grunts\grunt-build.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\index.html" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\lang\summernote-ar-AR.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\lang\summernote-bg-BG.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\lang\summernote-ca-ES.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\lang\summernote-cs-CZ.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\lang\summernote-da-DK.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\lang\summernote-de-DE.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\lang\summernote-es-ES.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\lang\summernote-es-EU.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\lang\summernote-fa-IR.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\lang\summernote-fi-FI.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\lang\summernote-fr-FR.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\lang\summernote-he-IL.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\lang\summernote-hu-HU.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\lang\summernote-id-ID.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\lang\summernote-it-IT.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\lang\summernote-ja-JP.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\lang\summernote-ko-KR.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\lang\summernote-lt-LT.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\lang\summernote-nb-NO.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\lang\summernote-nl-NL.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\lang\summernote-pl-PL.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\lang\summernote-pt-BR.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\lang\summernote-pt-PT.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\lang\summernote-ro-RO.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\lang\summernote-ru-RU.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\lang\summernote-sk-SK.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\lang\summernote-sl-SI.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\lang\summernote-sr-RS-Latin.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\lang\summernote-sr-RS.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\lang\summernote-sv-SE.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\lang\summernote-th-TH.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\lang\summernote-tr-TR.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\lang\summernote-uk-UA.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\lang\summernote-vi-VN.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\lang\summernote-zh-CN.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\lang\summernote-zh-TW.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\meteor\package-standalone.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\meteor\package.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\meteor\test.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\plugin\summernote-ext-hello.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\plugin\summernote-ext-hint.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\plugin\summernote-ext-video.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\src\js\app.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\src\js\core\agent.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\src\js\core\async.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\src\js\core\dom.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\src\js\core\func.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\src\js\core\key.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\src\js\core\list.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\src\js\core\range.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\src\js\defaults.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\src\js\editing\Bullet.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\src\js\editing\History.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\src\js\editing\Style.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\src\js\editing\Table.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\src\js\editing\Typing.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\src\js\EventHandler.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\src\js\intro.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\src\js\module\Button.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\src\js\module\Clipboard.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\src\js\module\Codeview.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\src\js\module\DragAndDrop.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\src\js\module\Editor.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\src\js\module\Fullscreen.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\src\js\module\Handle.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\src\js\module\HelpDialog.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\src\js\module\ImageDialog.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\src\js\module\LinkDialog.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\src\js\module\Popover.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\src\js\module\Statusbar.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\src\js\module\Toolbar.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\src\js\outro.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\src\js\Renderer.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\src\js\summernote.js" />
+    <Content Include="assets\bootstrap-3.3.7\editor\summernote\themes.html" />
+    <Content Include="assets\bootstrap-3.3.7\file input\css\fileinput.css" />
+    <Content Include="assets\bootstrap-3.3.7\file input\css\fileinput.min.css" />
+    <Content Include="assets\bootstrap-3.3.7\file input\js\fileinput.js" />
+    <Content Include="assets\bootstrap-3.3.7\file input\js\fileinput.min.js" />
+    <Content Include="assets\bootstrap-3.3.7\file input\js\locales\ar.js" />
+    <Content Include="assets\bootstrap-3.3.7\file input\js\locales\bg.js" />
+    <Content Include="assets\bootstrap-3.3.7\file input\js\locales\ca.js" />
+    <Content Include="assets\bootstrap-3.3.7\file input\js\locales\cr.js" />
+    <Content Include="assets\bootstrap-3.3.7\file input\js\locales\cz.js" />
+    <Content Include="assets\bootstrap-3.3.7\file input\js\locales\da.js" />
+    <Content Include="assets\bootstrap-3.3.7\file input\js\locales\de.js" />
+    <Content Include="assets\bootstrap-3.3.7\file input\js\locales\el.js" />
+    <Content Include="assets\bootstrap-3.3.7\file input\js\locales\es.js" />
+    <Content Include="assets\bootstrap-3.3.7\file input\js\locales\fa.js" />
+    <Content Include="assets\bootstrap-3.3.7\file input\js\locales\fi.js" />
+    <Content Include="assets\bootstrap-3.3.7\file input\js\locales\fr.js" />
+    <Content Include="assets\bootstrap-3.3.7\file input\js\locales\gl.js" />
+    <Content Include="assets\bootstrap-3.3.7\file input\js\locales\hu.js" />
+    <Content Include="assets\bootstrap-3.3.7\file input\js\locales\id.js" />
+    <Content Include="assets\bootstrap-3.3.7\file input\js\locales\it.js" />
+    <Content Include="assets\bootstrap-3.3.7\file input\js\locales\ja.js" />
+    <Content Include="assets\bootstrap-3.3.7\file input\js\locales\kr.js" />
+    <Content Include="assets\bootstrap-3.3.7\file input\js\locales\kz.js" />
+    <Content Include="assets\bootstrap-3.3.7\file input\js\locales\LANG.js" />
+    <Content Include="assets\bootstrap-3.3.7\file input\js\locales\nl.js" />
+    <Content Include="assets\bootstrap-3.3.7\file input\js\locales\no.js" />
+    <Content Include="assets\bootstrap-3.3.7\file input\js\locales\pl.js" />
+    <Content Include="assets\bootstrap-3.3.7\file input\js\locales\pt-BR.js" />
+    <Content Include="assets\bootstrap-3.3.7\file input\js\locales\pt.js" />
+    <Content Include="assets\bootstrap-3.3.7\file input\js\locales\ro.js" />
+    <Content Include="assets\bootstrap-3.3.7\file input\js\locales\ru.js" />
+    <Content Include="assets\bootstrap-3.3.7\file input\js\locales\sk.js" />
+    <Content Include="assets\bootstrap-3.3.7\file input\js\locales\sl.js" />
+    <Content Include="assets\bootstrap-3.3.7\file input\js\locales\sv.js" />
+    <Content Include="assets\bootstrap-3.3.7\file input\js\locales\th.js" />
+    <Content Include="assets\bootstrap-3.3.7\file input\js\locales\tr.js" />
+    <Content Include="assets\bootstrap-3.3.7\file input\js\locales\uk.js" />
+    <Content Include="assets\bootstrap-3.3.7\file input\js\locales\vi.js" />
+    <Content Include="assets\bootstrap-3.3.7\file input\js\locales\zh-TW.js" />
+    <Content Include="assets\bootstrap-3.3.7\file input\js\locales\zh.js" />
+    <Content Include="assets\bootstrap-3.3.7\file input\js\plugins\canvas-to-blob.js" />
+    <Content Include="assets\bootstrap-3.3.7\file input\js\plugins\canvas-to-blob.min.js" />
+    <Content Include="assets\bootstrap-3.3.7\file input\js\plugins\purify.js" />
+    <Content Include="assets\bootstrap-3.3.7\file input\js\plugins\purify.min.js" />
+    <Content Include="assets\bootstrap-3.3.7\file input\js\plugins\sortable.js" />
+    <Content Include="assets\bootstrap-3.3.7\file input\js\plugins\sortable.min.js" />
+    <Content Include="assets\bootstrap-3.3.7\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="assets\bootstrap-3.3.7\js\bootstrap.js" />
+    <Content Include="assets\bootstrap-3.3.7\js\bootstrap.min.js" />
+    <Content Include="assets\bootstrap-3.3.7\js\Jq.js" />
+    <Content Include="assets\bootstrap-3.3.7\js\mix.js" />
+    <Content Include="assets\bootstrap-3.3.7\js\npm.js" />
+    <Content Include="assets\bootstrap-3.3.7\nestable\index.html" />
+    <Content Include="assets\bootstrap-3.3.7\nestable\jquery.nestable.js" />
+    <Content Include="assets\font-awesome-4.7.0\css\font-awesome.css" />
+    <Content Include="assets\font-awesome-4.7.0\css\font-awesome.min.css" />
+    <Content Include="assets\font-awesome-4.7.0\fonts\fontawesome-webfont.svg" />
+    <Content Include="assets\font-awesome-4.7.0\HELP-US-OUT.txt" />
+    <Content Include="assets\img\ams-softech-company-logo.png" />
+    <Content Include="assets\img\AMS_certificate.jpg" />
+    <Content Include="assets\img\logo.jpg" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\addNewPage.aspx.cs">
+      <DependentUpon>addNewPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\addNewPage.aspx.designer.cs">
+      <DependentUpon>addNewPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\MasterPageVRightAssociates.Master.cs">
+      <DependentUpon>MasterPageVRightAssociates.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\MasterPageVRightAssociates.Master.designer.cs">
+      <DependentUpon>MasterPageVRightAssociates.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49889</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:49889/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

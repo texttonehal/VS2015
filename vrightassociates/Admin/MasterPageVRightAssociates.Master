@@ -1,0 +1,265 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPageVRightAssociates.master.cs" Inherits="vrightassociates.Admin.MasterPageVRightAssociates" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Welcome to VRightAssociates</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../assets/amssoftech.css" rel="stylesheet" />
+    <link href="../assets/bootstrap-3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!--Editor CSS Start-->
+    <link href="../assets/bootstrap-3.3.7/editor/bootstrap3-wysihtml5-bower/dist/bootstrap3-wysihtml5.min.css" rel="stylesheet" />
+    <link href="../assets/bootstrap-3.3.7/editor/summernote/dist/summernote.css" rel="stylesheet" />
+    <!--Editor CSS End-->
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <header>
+        <div class="container-fluid top-header">
+            <div class="row">
+                <div class="col-xs-2 col-sm-2 col-md-2">
+                    <button id="show"><i class="fa fa-align-justify"></i></button>
+                    <div class="side-nav">
+                        <button id="hide"><i class="fa fa-close"></i></button>
+                        <img src="../assets/img/ams-softech-company-logo.png" alt="" />
+                        <hr />
+
+                        <div class="panel-group" id="accordion">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                                            Dashboard
+                                            <i class="indicator glyphicon glyphicon-chevron-right  pull-right"></i>
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse1" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <ul>
+                                            <li><a href="#"><i class="fa fa-snowflake-o"></i> Home</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                                            Post
+                                            <i class="indicator glyphicon glyphicon-chevron-right  pull-right"></i>
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse2" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <ul>
+                                            <li><a href="#!"><i class="fa fa-snowflake-o"></i> All Post</a></li>
+                                            <li><a href="#!"><i class="fa fa-snowflake-o"></i> Add New Post</a></li>
+                                            <li><a href="#!"><i class="fa fa-snowflake-o"></i> Category</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                                            Pages
+                                            <i class="indicator glyphicon glyphicon-chevron-right  pull-right"></i>
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse3" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <ul>
+                                            <li><a href="#!"><i class="fa fa-snowflake-o"></i> All Page</a></li>
+                                            <li><a href="#!"><i class="fa fa-snowflake-o"></i> Add New Page</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+                                            Form
+                                            <i class="indicator glyphicon glyphicon-chevron-right pull-right"></i>
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse4" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <ul>
+                                            <li><a href="#!"><i class="fa fa-snowflake-o"></i> Enquiry Form</a></li>
+                                            <li><a href="#!"><i class="fa fa-snowflake-o"></i> Subscribe</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse5">
+                                            Media
+                                            <i class="indicator glyphicon glyphicon-chevron-right pull-right"></i>
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse5" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <ul>
+                                            <li><a href="#!"><i class="fa fa-snowflake-o"></i> All Media</a></li>
+                                            <li><a href="#!"><i class="fa fa-snowflake-o"></i> Add New Media</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse6">
+                                            Slider
+                                            <i class="indicator glyphicon glyphicon-chevron-right pull-right"></i>
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse6" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <ul>
+                                            <li><a href="#!"><i class="fa fa-snowflake-o"></i> Slider Theme</a></li>
+                                            <li><a href="#!"><i class="fa fa-snowflake-o"></i> Add Slider Content</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse7">
+                                            Menu
+                                            <i class="indicator glyphicon glyphicon-chevron-right pull-right"></i>
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse7" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <ul>
+                                            <li><a href="#!"><i class="fa fa-snowflake-o"></i> Header</a></li>
+                                            <li><a href="#!"><i class="fa fa-snowflake-o"></i> Footer</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse8">
+                                            Theme
+                                            <i class="indicator glyphicon glyphicon-chevron-right pull-right"></i>
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse8" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <ul>
+                                            <li><a href="#!"><i class="fa fa-snowflake-o"></i> Social Media</a></li>
+                                            <li><a href="#!"><i class="fa fa-snowflake-o"></i> Ads</a></li>
+                                            <li><a href="#!"><i class="fa fa-snowflake-o"></i> Theme Setting</a></li>
+                                            <li><a href="#!"><i class="fa fa-snowflake-o"></i> Widgets</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse9">
+                                            Tracking
+                                            <i class="indicator glyphicon glyphicon-chevron-right pull-right"></i>
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse9" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <ul>
+                                            <li><a href="#!"><i class="fa fa-snowflake-o"></i> Live</a></li>
+                                            <li><a href="#!"><i class="fa fa-snowflake-o"></i> Hits</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse10">
+                                            User
+                                            <i class="indicator glyphicon glyphicon-chevron-right pull-right"></i>
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse10" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <ul>
+                                            <li><a href="#!"><i class="fa fa-snowflake-o"></i> All User</a></li>
+                                            <li><a href="#!"><i class="fa fa-snowflake-o"></i> Add New User</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-xs-10 col-sm-6 col-md-8">
+                    <h1><span>Admin</span> Panel</h1>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-2 text-right">
+                    <div class="dropdown">
+                        <button class="user-logo dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            <img src="../assets/img/logo.jpg" />
+                            Mohammad Azad
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                            <li><a href="#"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+                            <li><a href="#"><i class="fa fa-user"></i> My Profile</a></li>
+                            <li>
+                                <button type="button"><i class="fa fa-sign-out"></i> Log Out</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+    </asp:ContentPlaceHolder>
+        </div>
+    </form>
+    <link href="../assets/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <script type="text/javascript" src="../assets/bootstrap-3.3.7/js/Jq.js"></script>
+    <script type="text/javascript" src="../assets/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../assets/bootstrap-3.3.7/js/mix.js"></script>
+    
+    <!--Editor Js Start-->
+    <script type="text/javascript" src="../assets/bootstrap-3.3.7/editor/bootstrap3-wysihtml5-bower/dist/bootstrap3-wysihtml5.all.min.js"></script>
+    <script type="text/javascript" src="../assets/bootstrap-3.3.7/editor/summernote/dist/summernote.min.js"></script>
+    <script type="text/javascript" src="../assets/bootstrap-3.3.7/editor/forms/wysiwyg.js"></script>
+    <!--Editor Js End-->
+
+    <!--Bootstrap File Input Start-->
+    <link type="text/css" href="../assets/bootstrap-3.3.7/file input/css/fileinput.css" rel="stylesheet" />
+    <script type="text/javascript" src="../assets/bootstrap-3.3.7/file input/js/fileinput.js"></script>
+    <!--Bootstrap File Input End-->
+</body>
+    
+</html>
+
